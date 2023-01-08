@@ -1,0 +1,66 @@
+let studentName = ["Hethe" , "Gary" , "Jose" , "Will" , "John" , "Scott" , "Kevin" , "Brayan" , "Edgan" , "Sivisco"]
+console.log(studentName);
+
+function studentNameDisplay(){
+    for(let i=0; i < studentName.length; i++){
+    
+    document.getElementById("studentName").innerHTML += studentName[i];
+    }
+}
+studentNameDisplay();
+
+let users = [
+    {
+        name:"Hethe",
+        salary:5000
+    },
+    {
+        name:"Gary",
+        salary:5000
+    },
+    {
+        name:"Jose",
+        salary:5000
+    },
+    {
+        name:"will",
+        salary:5000
+    },
+    {
+        name:"John",
+        salary:5000
+    },
+    {
+        name:"Scott",
+        salary:5000
+    },
+    {
+        name:"Kevin",
+        salary:5000
+    },
+    {
+        name:"Brayan",
+        salary:5000
+    },
+    {
+        name:"Edgar",
+        salary:5000
+    },
+    {
+        name:"Sivisco",
+        salary:5000
+    }
+]
+    function displayUsers(){
+        let row = "";
+        for(let i=0; i < users.length; i++){
+    
+            row+=` <tr>
+            <td scope="row">Hethe</td>
+            <td>5,000</td>
+        </tr>`
+        
+    }
+    document.getElementById("displayUsers").innerHTML = row;
+}
+displayUsers();
