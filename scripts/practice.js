@@ -23,7 +23,7 @@ let users = [
         salary:5000
     },
     {
-        name:"will",
+        name:"Will",
         salary:5000
     },
     {
@@ -54,13 +54,14 @@ let users = [
     function displayUsers(){
         let row = "";
         for(let i=0; i < users.length; i++){
-    
-            row+=` <tr>
+            
+            row+=`            
             <td scope="row">Hethe</td>
             <td>5,000</td>
-        </tr>`
-        
+        </tr>` 
     }
     document.getElementById("displayUsers").innerHTML = row;
+    // document.getElementById("displayUsers").innerHTML = studentName.name
+
 }
 displayUsers();
