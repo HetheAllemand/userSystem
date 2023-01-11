@@ -13,19 +13,19 @@ studentNameDisplay();
 let users = [
     {
         name:"Hethe",
-        salary:5000
+        salary:1000
     },
     {
         name:"Gary",
-        salary:5000
+        salary:2000
     },
     {
         name:"Jose",
-        salary:5000
+        salary:3000
     },
     {
         name:"Will",
-        salary:5000
+        salary:4000
     },
     {
         name:"John",
@@ -33,23 +33,23 @@ let users = [
     },
     {
         name:"Scott",
-        salary:5000
+        salary:6000
     },
     {
         name:"Kevin",
-        salary:5000
+        salary:7000
     },
     {
         name:"Brayan",
-        salary:5000
+        salary:8000
     },
     {
         name:"Edgar",
-        salary:5000
+        salary:9000
     },
     {
         name:"Sivisco",
-        salary:5000
+        salary:10000
     }
 ]
 console.log(users);
@@ -57,10 +57,11 @@ console.log(users);
     function displayUsers(){
         let row = "";
         for(let i=0; i < users.length; i++){
+            let user=users[i]
             
-            row+=`            
-            <td scope="row">${name.value}</td>
-            <td>5000</td>
+            row+=`  <tr>          
+            <td scope="row">${user.name}</td>
+            <td>${user.salary}</td>
         </tr>` 
     }
    document.getElementById("displayUsers").innerHTML = row
