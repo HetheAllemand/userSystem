@@ -7,6 +7,7 @@ function studentNameDisplay(){
     document.getElementById("studentName").innerHTML += studentName[i];
     }
 }
+
 studentNameDisplay();
 
 let users = [
@@ -51,17 +52,27 @@ let users = [
         salary:5000
     }
 ]
+console.log(users);
+
     function displayUsers(){
         let row = "";
         for(let i=0; i < users.length; i++){
             
             row+=`            
-            <td scope="row">Hethe</td>
-            <td>5,000</td>
+            <td scope="row">${name.value}</td>
+            <td>5000</td>
         </tr>` 
     }
-    document.getElementById("displayUsers").innerHTML = row;
-    // document.getElementById("displayUsers").innerHTML = studentName.name
+   document.getElementById("displayUsers").innerHTML = row
+       // document.getElementById("displayUsers").innerHTML += studentName[i]
 
 }
 displayUsers();
+
+
+    
+
+
+
+
+    
